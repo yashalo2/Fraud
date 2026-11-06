@@ -1,0 +1,125 @@
+.container {
+  background: linear-gradient(
+    -135deg,
+    #013001,
+    #1e293b,
+    #0d1322,
+    #1e293b,
+    #0d1322,
+    #1e293b,
+    #0d1322,
+    #1e293b,
+    #0d1322,
+    #1e293b,
+    #0d1322,
+    #1e293b
+  );
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.container .logo {
+  display: flex;
+  gap: 5px;
+  width: 350px;
+  height: 100px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.container .logo .logoText {
+  flex: 1;
+  color: #fff;
+  padding-left: 10px;
+  border-right: 1px solid green;
+  animation: slideIn 1s ease forwards;
+}
+@keyframes slideIn {
+  from {
+    flex: 0;
+    overflow: hidden;
+  }
+  to {
+    overflow: visible;
+  }
+}
+.container .logo .logoText h3 {
+  color: #fff;
+  margin: 0;
+  padding: 10px;
+}
+.container .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.container .card {
+  width: 350px;
+  height: max-content;
+  background: #0d13226e;
+  border-radius: 10px;
+  border: 1px solid #1e293b;
+  display: grid;
+  gap: 10px;
+  box-shadow: 0px 0px 10px #1e293b;
+}
+.container .card .cardHeader {
+  width: calc(100% - 2em);
+  align-items: center;
+  justify-content: center;
+  padding-left: 1em;
+  margin-bottom: 10px;
+}
+.container .card .cardHeader input {
+  width: calc(100% - 1em);
+  border: none;
+  background: none;
+  padding: 0.5em;
+  border: 1px solid #1e293b;
+}
+.container .card .cardHeader button {
+  width: 100%;
+  padding: 0.5em;
+  border: none;
+  border-radius: 5px;
+  background: fixed #0957ff;
+  color: #fff;
+}
+.container .card .cardHeader h2 {
+  color: #0ea5e9;
+}
