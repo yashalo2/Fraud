@@ -119,6 +119,7 @@
   border-radius: 5px;
   background: fixed #0957ff;
   color: #fff;
+  cursor: pointer;
 }
 .container .card .cardHeader h2 {
   color: #0ea5e9;

@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import logo from "../assets/logo.jpg";
 import style from "../style/Login.module.css";
 function Login() {
+  const navigate = useNavigate();
   return (
     <div className={style.container}>
       <div className={style.logo}>
@@ -26,7 +28,7 @@ function Login() {
           <a href="#">Forgot Password?</a>
         </div>
         <div className={style.cardHeader}>
-          <button>Login</button>
+          <button onClick={() => navigate("/dashboard")}>Login</button>
         </div>
         <div
           style={{

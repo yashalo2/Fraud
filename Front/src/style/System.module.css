@@ -1,0 +1,156 @@
+.container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  background: #090d16;
+}
+.container .topBar {
+  width: calc(100% - 1em - 200px);
+  position: absolute;
+  left: 200px;
+  height: 40px;
+  background: #0d1322;
+  padding: 0.5em;
+  color: snow;
+  border-left: 1px solid #8080806c;
+  border-bottom: 1px solid #8080806c;
+  display: flex;
+}
+.container .leftPanel {
+  width: calc(200px - 1em);
+  height: calc(100% - 1em);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  padding: 0.5em;
+  border-right: 1px solid #8080806c;
+}
+.container .topBar .topLeft {
+  position: relative;
+  width: 110px;
+  height: 100%;
+  float: left;
+  align-items: center;
+}
+.container .topBar .topLeft .liveIndicator {
+  width: 100px;
+  height: calc(100% - 2px);
+  border-radius: 30px;
+  background: #01ff0152;
+  border: 1px solid #01ff01;
+  box-shadow: inset 0px 0px 10px #01ff01c9;
+}
+.container .topBar .topLeft .liveIndicator .liveText {
+  padding-left: 0.5em;
+  padding-top: 0.5em;
+  font-size: small;
+}
+.container .topBar .topLeft .liveIndicator .labelSlogan {
+  font-size: x-small;
+  color: #e4e3e36c;
+  width: 100%;
+  text-align: center;
+}
+.container .topBar .topMiddle {
+  width: calc(50% - 110px);
+  height: 100%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+.container .topMiddle .searchContainer {
+  width: calc(80% - 1em);
+  height: calc(80% - 1em);
+  border-radius: 10px;
+  padding: 0.5em;
+  display: flex;
+  gap: 5px;
+  border: 1px solid #8080806c;
+}
+.container .topMiddle .searchContainer input {
+  height: 100%;
+  border: none;
+  outline: none;
+  width: 100%;
+  background: none;
+  color: snow;
+}
+.container .topBar .topRight {
+  flex: 1;
+  height: 100%;
+  float: right;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+}
+.container .topRight .div {
+  background: blue;
+  display: flex;
+  text-align: end;
+  justify-content: end;
+  gap: 10px;
+}
+.container .leftPanel .name {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: calc(100% - 1em);
+  height: 40px;
+  background: #0d1322;
+  border-bottom: 1px solid #8080806c;
+  padding: 0.5em;
+}
+.container .leftPanel .navigatorsContainer {
+  position: absolute;
+  left: 0px;
+  top: calc(40px + 1em);
+  width: calc(100% - 1em);
+  height: calc(60% - 40px - 1em);
+  background: #0d1322;
+  border-top: 1px solid #8080806c;
+  display: grid;
+  gap: 2px;
+  padding: 0.5em;
+  text-align: start;
+}
+.container .leftPanel .navigatorsContainer div {
+  height: max-content;
+}
+.container .leftPanel .navigatorsContainer div button {
+  border: none;
+  background: none;
+  padding: 0.3em;
+  height: max-content;
+  margin: 1px;
+  color: grey;
+  transition: 0.3s ease;
+}
+.container .leftPanel .navigatorsContainer div button:hover {
+  background: black;
+  color: #fff;
+  padding-left: 1em;
+}
+.container .content {
+  position: absolute;
+  left: 205px;
+  top: calc(45px + 1em);
+  width: calc(100% - 210px - 1em);
+  height: calc(100% - 65px - 2em);
+  background: #0d1322;
+  padding: 0.5em;
+}
+.container .leftPanel .leftBottomPanel {
+  position: absolute;
+  bottom: 10px;
+  width: calc(95% - 1em);
+  padding: 0.5em;
+  height: 100px;
+  background: #0d1322;
+  border-top: 1px solid #8080806c;
+  box-shadow: inset 0px 0px 20px #01ff01c9;
+  border-radius: 10px;
+}
